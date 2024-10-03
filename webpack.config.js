@@ -11,8 +11,15 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      //adds our newly downloaded HTML plugin to webpack's execution
-      template: "./src/template.html", //sets the path to our template file
+      template: "./src/template.html", //HTML TEMPLATE FILE
     }),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"], //IF ERROR CHECK ORDER
+      },
+    ],
+  },
 };
