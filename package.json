@@ -1,0 +1,21 @@
+{
+  "name": "odin-restaurant-page",
+  "version": "1.0.0",
+  "description": "Personal repo for the restaurant page project for The Odin Project's Javascript course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Odin Project",
+    "Webpack",
+    "Restaurant"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.6.0",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
