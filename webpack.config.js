@@ -18,7 +18,11 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"], //IF ERROR CHECK ORDER
+        use: ["style-loader", "css-loader"], //IF ERROR CHECK ORDER (goes backwards)
+      },
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
       },
     ],
   },
