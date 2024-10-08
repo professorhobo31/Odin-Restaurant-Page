@@ -1,14 +1,24 @@
 $main-color: rgb(162, 37, 37);
 
+* {
+  margin: 0; //optional shit can remove if stuff breaks
+}
+
 .nav-bar {
   border: solid 2px red;
+  width: 100%;
 
   nav {
     border: solid 2px blue;
+    display: flex;
+    justify-content: space-around;
 
     #logo {
-      height: 50px;
+      transform-origin: center;
+      height: 75px;
       width: auto;
+      position: relative;
+      top: 25px;
     }
 
     button {
