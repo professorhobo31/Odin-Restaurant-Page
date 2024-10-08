@@ -1,0 +1,18 @@
+$main-color: rgb(162, 37, 37);
+
+.nav-bar {
+  border: solid 2px red;
+
+  nav {
+    border: solid 2px blue;
+
+    #logo {
+      height: 50px;
+      width: auto;
+    }
+
+    button {
+      border: solid 2px green;
+    }
+  }
+}
