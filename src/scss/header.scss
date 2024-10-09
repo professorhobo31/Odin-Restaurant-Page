@@ -1,4 +1,6 @@
-$main-color: rgb(162, 37, 37);
+$main-color1: #f58320;
+$main-color2: #6eaa44;
+
 @font-face {
   font-family: roboto-medium;
   src: url(../fonts/roboto/Roboto-Medium.ttf);
@@ -17,11 +19,10 @@ body {
 }
 
 .nav-bar {
-  outline: solid 2px red;
   width: 100%;
 
   nav {
-    outline: solid 2px blue;
+    background-color: $main-color2;
     display: flex;
     justify-content: center;
     gap: 3rem;
@@ -33,16 +34,20 @@ body {
       position: relative;
       top: 25px;
     }
-    
-    
+
     button {
-      font-family: 'roboto-medium';
+      font-family: "roboto-medium";
       font-size: 1rem;
       font-weight: 500;
       outline: none;
       border: none;
-      background-color: white;
-      
+      background-color: inherit;
+      color: $main-color1;
+
+      &:hover {
+        color: red;
+      }
+
       span {
         margin-left: 0.25rem;
       }
