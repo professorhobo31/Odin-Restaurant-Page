@@ -1,0 +1,41 @@
+$heroheight: 20rem;
+
+.hero-title {
+  font-family: "roboto-medium";
+  font-size: 2rem;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: $main-color2;
+  color: $main-color1;
+}
+
+#content {
+  background-color: $main-color2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 3rem;
+
+  .hero-left {
+    font-family: "roboto-medium";
+    flex-direction: column;
+    max-width: 40%;
+    flex-grow: 1;
+    color: rgb(225, 225, 225);
+
+    span {
+      color: $main-color1;
+      border: 2px solid red;
+    }
+  }
+
+  .hero-right {
+    display: inherit;
+    flex-direction: column;
+    width: 40%;
+    outline: solid 2px red;
+    height: $heroheight;
+  }
+}
