@@ -1,17 +1,30 @@
 $main-color: rgb(162, 37, 37);
+@font-face {
+  font-family: roboto-medium;
+  src: url(../fonts/roboto/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: roboto-italic;
+  src: url(../fonts/roboto/Roboto-BlackItalic.ttf);
+}
 
 * {
-  margin: 0; //optional shit can remove if stuff breaks
+  margin: 0px; //optional shit can remove if stuff breaks
+}
+
+body {
+  width: 100%;
 }
 
 .nav-bar {
-  border: solid 2px red;
+  outline: solid 2px red;
   width: 100%;
 
   nav {
-    border: solid 2px blue;
+    outline: solid 2px blue;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 3rem;
 
     #logo {
       transform-origin: center;
@@ -20,9 +33,19 @@ $main-color: rgb(162, 37, 37);
       position: relative;
       top: 25px;
     }
-
+    
+    
     button {
-      border: solid 2px green;
+      font-family: 'roboto-medium';
+      font-size: 1rem;
+      font-weight: 500;
+      outline: none;
+      border: none;
+      background-color: white;
+      
+      span {
+        margin-left: 0.25rem;
+      }
     }
   }
 }
